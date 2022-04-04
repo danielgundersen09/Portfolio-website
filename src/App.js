@@ -10,23 +10,22 @@ import {
   FooterSection,
   FooterLinkList
 } from "react-mdl";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Main from "./components/main";
 import { Link } from "react-router-dom";
+
 
 class App extends Component {
   render() {
     return (
       <div>
         <Layout>
-          <Header
-            className="header-color"
+          <Header style={{padding:"10px"}}
+            className="header-styling"
             title={
-              <Link to="/">
-                <img
-                  style={{ maxHeight: "40px" }}
-                  src="/images/daniel-gundersen-logo.svg"
-                  alt="logo"
-                />
+              <Link to="/" style={{textDecoration: 'none', color:"#fff"}}>
+                <h3>Daniel Gundersen <FontAwesomeIcon icon={faCode}></FontAwesomeIcon></h3>
               </Link>
             }
             scroll
@@ -36,7 +35,7 @@ class App extends Component {
                 About Me
               </Link>
               <Link className="link-hover grow" to="/resume">
-                My CV
+                Experience
               </Link>
               <Link className="link-hover grow" to="/contact">
                 Contact
@@ -61,7 +60,7 @@ class App extends Component {
             <Main />
           </Content>
 
-          <Footer className="footer-color" size="mini">
+          <Footer className="footer-styling" size="mini">
             <FooterSection type="left" logo="My portfolio">
               <FooterLinkList>
                 <Link to="/aboutme">About me</Link>

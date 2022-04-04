@@ -1,0 +1,35 @@
+.landing-grid {
+    text-align: center;  
+  }
+  
+  .banner-text {
+    background-color: $primaryBackgroundColour;
+    opacity: 0.8;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5em;
+    margin-bottom: 7em;
+    padding: 10px 0px 10px 0px;
+  }
+  
+  .banner-text h1 {
+    font-size: 66px;
+    font-weight: bold;
+    color: $primaryTextColour;
+  }
+  
+  .cards {
+    min-width: 450;
+    margin: auto;
+    margin-bottom: 100px;
+    &.grow {
+      transition: all 0.2s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+ 

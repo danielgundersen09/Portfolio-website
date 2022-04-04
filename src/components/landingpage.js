@@ -12,8 +12,8 @@ import {
 class Landing extends Component {
   render() {
     return (
-      <div style={{ width: "100%" }}>
-        <Grid className="landing-grid">
+      <div className="landing-grid">
+        <Grid >
           <Cell col={12}>
             <div className="banner-text">
               <h1>My projects</h1>
@@ -33,8 +33,7 @@ class Landing extends Component {
               Boardgame project
             </CardTitle>
             <CardText>
-              Game of thrones boardgame. A game i made for the first semester
-              project, second year.
+              Unfinished Game of thrones boardgame. 
             </CardText>
             <CardActions border>
               <Button
@@ -48,7 +47,7 @@ class Landing extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card className="cards grow" shadow={5}>
+          <Card className="cards grow" shadow={5}> 
             <CardTitle
               style={{
                 color: "#fff",
@@ -59,7 +58,7 @@ class Landing extends Component {
               SpaceX project
             </CardTitle>
             <CardText>
-              A SpaceX webpage i made for the semester project 2, first year.
+              A SpaceX webpage i made first year in school.
             </CardText>
             <CardActions border>
               <Button
@@ -76,20 +75,20 @@ class Landing extends Component {
           <Card className="cards grow" shadow={5}>
             <CardTitle
               style={{
-                color: "black",
+                color: "#fff",
                 height: "176px",
-                background: "url(/images/homefair-portfolio.png) center / cover"
+                background: "url(/images/kalkulator-preview.png) center / cover"
               }}
             >
-              Homefair project
+              Calculator project
             </CardTitle>
             <CardText>
-              A Course assignment i made for a firm called Homefair.
+              A calculator i made in my spare time.
             </CardText>
             <CardActions border>
               <Button
                 colored
-                href="https://github.com/danielgundersen09/Homefair-ca"
+                href="https://github.com/danielgundersen09/Kalkulator"
                 target="_blank"
               >
                 GitHub

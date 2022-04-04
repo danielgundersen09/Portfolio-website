@@ -4,6 +4,7 @@ import { Grid, Cell } from "react-mdl";
 class Education extends Component {
   render() {
     return (
+      <div>
       <Grid>
         <Cell col={4}>
           <p>
@@ -15,6 +16,7 @@ class Education extends Component {
           <p>{this.props.schoolDescription}</p>
         </Cell>
       </Grid>
+      </div>
     );
   }
 }

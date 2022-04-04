@@ -4,6 +4,7 @@ import { Grid, Cell } from "react-mdl";
 class Experience extends Component {
   render() {
     return (
+      <div>
       <Grid>
         <Cell col={4}>
           <p>
@@ -15,6 +16,7 @@ class Experience extends Component {
           <p>{this.props.jobDescription}</p>
         </Cell>
       </Grid>
+      </div>
     );
   }
 }
